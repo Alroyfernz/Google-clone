@@ -13,7 +13,7 @@ function SearchPage() {
   const style = { color: "gray", marginRight: "10px", paddingLeft: "10px" };
   const state = useStateValue();
   const { term } = state[0];
-
+  const { data } = useGoogleSearch(term);
   return (
     <div className="searchpage">
       <div className="SearchPage__header">
