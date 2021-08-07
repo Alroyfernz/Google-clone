@@ -26,7 +26,10 @@ function Home() {
         </div>{" "}
       </div>
       <div className="home__body">
-        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png" />
+        <img
+          alt="goole"
+          src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png"
+        />
         <Search />
       </div>
     </div>

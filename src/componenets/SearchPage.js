@@ -11,8 +11,8 @@ import Search from "../Search";
 
 function SearchPage() {
   const style = { color: "gray", marginRight: "10px", paddingLeft: "10px" };
-  const [{ term }, dispatch] = useStateValue();
-  const { data } = useGoogleSearch(term);
+  const state = useStateValue();
+  const { term } = state[0];
 
   return (
     <div className="searchpage">
@@ -20,6 +20,7 @@ function SearchPage() {
         <Link to="/">
           <img
             className="searchPage__logo"
+            alt="goole"
             src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png"
           />
         </Link>
